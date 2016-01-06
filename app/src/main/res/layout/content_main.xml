@@ -15,5 +15,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello  github!" />
+        android:text="Dialog" />
+    <Button
+        android:id="@+id/alertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog"
+        android:textAllCaps="false"
+        />
+    <Button
+    android:id="@+id/dialogFragment"
+    android:layout_below="@+id/alertDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:text="dialogFragment "
+    android:textAllCaps="false"
+    />
+
+
+    <Button
+        android:id="@+id/customAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dialogFragment"
+        android:layout_height="wrap_content"
+        android:text="自定义 alertDialog"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/customdialogFragment"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/customAlertDialog"
+        android:layout_height="wrap_content"
+        android:text="自定义 dialogFragment"
+        android:textAllCaps="false"
+        />
 </RelativeLayout>
