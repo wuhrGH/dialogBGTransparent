@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                FireMissilesDialogFragment fireMissilesDialogFragment=new FireMissilesDialogFragment();//Fragment实例
-                fireMissilesDialogFragment.show(getSupportFragmentManager(),"dialog");//调用show()方法显示对话框
+                fireMissilesDialogFragment.show(getSupportFragmentManager(), "dialog");//调用show()方法显示对话框
             }
         });
 
@@ -57,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showCustomAlertDialog();
+            }
+        });
+
+        Button customdialogFragment=(Button)findViewById(R.id.customdialogFragment);
+        customdialogFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomFireMissilesDialogFragment customFireMissilesDialogFragment=new CustomFireMissilesDialogFragment();//Fragment实例
+                customFireMissilesDialogFragment.show(getSupportFragmentManager(), "dialog");//调用show()方法显示对话框
             }
         });
     }
