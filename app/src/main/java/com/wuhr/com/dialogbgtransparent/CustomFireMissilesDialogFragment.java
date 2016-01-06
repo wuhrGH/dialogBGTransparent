@@ -24,6 +24,7 @@ public class CustomFireMissilesDialogFragment extends DialogFragment {
         AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
        View view = inflater.inflate(R.layout.alertdialog_layout, null);
+
       // builder.setMessage("您确定要拨打电话?");//设置提示信息，也可以设置标题setTitle
         builder.setView(view);
         EditText phoneNoTV=(EditText)view.findViewById(R.id.phone);

@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 CustomFireMissilesDialogFragment customFireMissilesDialogFragment=new CustomFireMissilesDialogFragment();//Fragment实例
                 customFireMissilesDialogFragment.show(getSupportFragmentManager(), "dialog");//调用show()方法显示对话框
+
             }
         });
     }
