@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item>兰州市</item>
+        <item>天水市</item>
+        <item>平凉市</item>
+    </string-array>
+</resources>

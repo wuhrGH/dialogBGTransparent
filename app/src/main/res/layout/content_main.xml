@@ -49,4 +49,21 @@
         android:text="自定义 dialogFragment"
         android:textAllCaps="false"
         />
+    <Button
+        android:id="@+id/sigleDilog"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/customdialogFragment"
+        android:layout_height="wrap_content"
+        android:text="单选Dialog"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/multDilog"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/sigleDilog"
+        android:layout_height="wrap_content"
+        android:text="复选Dialog"
+        android:textAllCaps="false"
+        />
 </RelativeLayout>
