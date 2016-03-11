@@ -66,4 +66,36 @@
         android:text="复选Dialog"
         android:textAllCaps="false"
         />
+    <Button
+        android:id="@+id/dialogFragmentEvent"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/multDilog"
+        android:layout_height="wrap_content"
+        android:text="dialogFragment事件回传到Activity"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/dialogFragmentLayout"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dialogFragmentEvent"
+        android:layout_height="wrap_content"
+        android:text="dialogFragment不同屏幕大小显示不同样式"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dialogFragmentLayout"
+        android:layout_height="wrap_content"
+        android:text="时间选择器"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/timePicker"
+        android:layout_height="wrap_content"
+        android:text="日期选择器"
+        android:textAllCaps="false"
+        />
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -86,6 +87,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               multiDialog();
+            }
+        });
+
+        final Button timeDialog=(Button)findViewById(R.id.timePicker);
+        timeDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                timeDialog();
+            }
+        });
+        final Button dateDialog=(Button)findViewById(R.id.datePicker);
+        dateDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dateDialog();
             }
         });
     }
@@ -213,5 +229,13 @@ public void onClick(DialogInterface dialog, int id) {
                 });
 
          builder.create().show();
+    }
+    public void  timeDialog(){
+        DialogFragment timerDialog=new TimePickerFragment();
+        timerDialog.show(getSupportFragmentManager(), "timeDialog");
+    }
+    public void  dateDialog(){
+        DialogFragment dateDialog=new DatePickerFragment();
+        dateDialog.show(getSupportFragmentManager(),"dateDialog");
     }
 }
